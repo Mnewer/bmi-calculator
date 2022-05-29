@@ -1,13 +1,28 @@
 "use strict";
 
-const heightInput = document.querySelector(`.height`);
-const weightInput = document.querySelector(`weight`);
-const bmiOutput = document.querySelector(`.bmioutput`);
+var heightInput = document.querySelector(".height-input-field");
+var weightInput = document.querySelector(".weight-input-field");
+var calculateButton = document.querySelector(".calculate");
+var result = document.querySelector(".result");
+var statement = document.querySelector(".result-statement");
+var BMI, height, weight;
 
-function calcBMI(heightInput, weightInput) {
-  const bmi = (weightInput / heightInput ** 2) * 10000;
-  return bmi;
-}
+calculateButton.addEventListener("click", () => {
+  height = heightInput.value;
+  weight = weightInput.value;
+  BMI = (weight / height ** 2) * 10000;
+  result.innerText = Math.floor(BMI);
+
+  if (BMI < 18.5) {
+    statement.innerText = "Skinny skank!";
+  } else if (BMI > 18.5 && BMI < 24.9) {
+    statement.innerText = "No worries bruh!";
+  } else if (BMI > 25 && BMI < 29.9) {
+    statement.innerText = "Husky!";
+  } else {
+    statement.innerText = "Damn Son! U F.A.T";
+  }
+});
 
 /*
 BMI 	Nutritional Status
