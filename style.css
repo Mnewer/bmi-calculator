@@ -1,22 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  max-width: max-content;
+  margin: auto;
   font-family: sans-serif;
   color: #333;
-  line-height: 1.5;
-  height: 100vh;
-  position: relative;
-  justify-content: center;
   background: linear-gradient(to top left, #322c6e, #7dd56f);
-}
-
-h1 {
-  padding: auto;
-  align-items: flex-start;
-  position: relative;
-  justify-content: center;
+  height: 100vh;
 }
