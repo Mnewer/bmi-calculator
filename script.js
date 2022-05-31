@@ -1,10 +1,10 @@
 "use strict";
 
-var heightInput = document.querySelector(".height-input-field");
-var weightInput = document.querySelector(".weight-input-field");
-var calculateButton = document.querySelector(".calculate");
-var result = document.querySelector(".result");
-var statement = document.querySelector(".result-statement");
+var heightInput = document.querySelector(".height-input");
+var weightInput = document.querySelector(".weight-input");
+var calculateButton = document.querySelector(".btn-calculate");
+var result = document.querySelector(".results");
+var statement = document.querySelector(".result-show");
 var BMI, height, weight;
 
 calculateButton.addEventListener("click", () => {
@@ -15,12 +15,16 @@ calculateButton.addEventListener("click", () => {
 
   if (BMI < 18.5) {
     statement.innerText = "Skinny skank!";
+    document.body.style.background = "white";
   } else if (BMI > 18.5 && BMI < 24.9) {
     statement.innerText = "No worries bruh!";
+    document.body.style.background = "green";
   } else if (BMI > 25 && BMI < 29.9) {
     statement.innerText = "Husky!";
+    document.body.style.background = "orange";
   } else {
     statement.innerText = "Damn Son! U F.A.T";
+    document.body.style.background = "red";
   }
 });
 
