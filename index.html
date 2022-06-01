@@ -12,12 +12,14 @@
   <body>
     <div class="calculator-container">
       <h1>BMI Calculator</h1>
-      <h3>May be slightly offensive to some people</h3>
+      <h3>May be slightly offensive</h3>
       <p>Height in cm:</p>
       <input class="height-input" type="text" />
       <p>Weight in kg:</p>
       <input class="weight-input" type="text" /><br />
-      <button class="btn-calculate">Calculate BMI</button>
+      <button type="submit" class="btn-calculate" id="btn" onclick="calcBMI()">
+        Calculate BMI
+      </button>
     </div>
     <h3 class="results"></h3>
     <p class="result-show"></p>
