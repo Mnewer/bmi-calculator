@@ -7,7 +7,9 @@ var result = document.querySelector(".results");
 var statement = document.querySelector(".result-show");
 var BMI, height, weight;
 
-calculateButton.addEventListener("click", () => {
+// calculateButton.addEventListener("click", () => {
+
+function calcBMI() {
   height = heightInput.value;
   weight = weightInput.value;
   BMI = (weight / height ** 2) * 10000;
@@ -23,11 +25,16 @@ calculateButton.addEventListener("click", () => {
     statement.innerText = "Husky!";
     document.body.style.background = "orange";
   } else {
-    statement.innerText = "Damn Son! U F.A.T";
+    statement.innerText = "Damn Son! U F.A.T test";
     document.body.style.background = "red";
   }
-});
+}
 
+calculateButton.addEventListener("keyup", (e) => {
+  if (e.keyCode === "Enter") {
+    calcBMI();
+  }
+});
 /*
 BMI 	Nutritional Status
 Below 18.5 	Underweight
