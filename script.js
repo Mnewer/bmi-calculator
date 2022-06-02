@@ -9,11 +9,11 @@ function calcBMI() {
   const result = document.querySelector(".results");
   const statement = document.querySelector(".result-show");
   const img = document.getElementById("cup");
-
   height = heightInput.value;
   weight = weightInput.value;
   BMI = (weight / height ** 2) * 10000;
   result.innerText = Math.floor(BMI);
+  img.classList.remove("unhide-glass");
 
   if (BMI < 18.5) {
     statement.innerText = "*bones rattling*";
@@ -21,13 +21,15 @@ function calcBMI() {
   } else if (BMI > 18.5 && BMI < 24.9) {
     statement.innerText = "No worries bruh!";
     document.body.style.background = "green";
+    hide;
   } else if (BMI > 25 && BMI < 29.9) {
     statement.innerText = "Husky!";
     document.body.style.background = "orange";
+    hide;
   } else {
     statement.innerText = "T-Rex!";
     document.body.style.background = "red";
-    cup.classList.toggle("unhide");
+    img.classList.toggle("unhide-glass");
   }
 }
 

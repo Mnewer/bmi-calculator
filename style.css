@@ -7,10 +7,10 @@ body {
   height: 200vh;
 }
 
-.gif {
+.hide-glass {
   display: none;
 }
 
-.unhide {
+.unhide-glass {
   display: block;
 }
