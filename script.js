@@ -12,20 +12,19 @@ function calcBMI() {
   height = heightInput.value;
   weight = weightInput.value;
   BMI = (weight / height ** 2) * 10000;
-  result.innerText = Math.floor(BMI);
+  // result.innerText = Math.floor(BMI);
+  result.innerText = BMI;
   img.classList.remove("unhide-glass");
 
   if (BMI < 18.5) {
     statement.innerText = "*bones rattling*";
     document.body.style.background = "white";
-  } else if (BMI > 18.5 && BMI < 24.9) {
+  } else if (BMI > 18.5 && BMI < 25) {
     statement.innerText = "No worries bruh!";
     document.body.style.background = "green";
-    hide;
-  } else if (BMI > 25 && BMI < 29.9) {
+  } else if (BMI > 25 && BMI < 30) {
     statement.innerText = "Husky!";
     document.body.style.background = "orange";
-    hide;
   } else {
     statement.innerText = "T-Rex!";
     document.body.style.background = "red";
