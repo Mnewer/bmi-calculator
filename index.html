@@ -10,19 +10,35 @@
   </head>
 
   <body>
-    <div class="calculator-container">
-      <h1>BMI Calculator</h1>
-      <h3>May be slightly offensive</h3>
-      <p>Height in cm:</p>
-      <input class="height-input" type="text" />
-      <p>Weight in kg:</p>
-      <input class="weight-input" type="text" /><br />
-      <button type="submit" class="btn-calculate" id="btn" onclick="calcBMI()">
-        Calculate BMI
-      </button>
-    </div>
-    <h3 class="results"></h3>
-    <p class="result-show"></p>
+    <center>
+      <div class="calculator-container">
+        <h1>BMI Calculator</h1>
+        <h3>May be slightly offensive</h3>
+        <p>Height in cm:</p>
+        <input class="height-input" type="text" />
+        <p>Weight in kg:</p>
+        <input class="weight-input" type="text" /><br />
+        <button
+          type="submit"
+          class="btn-calculate"
+          id="btn"
+          onclick="calcBMI()"
+        >
+          Calculate BMI
+        </button>
+      </div>
+      <h3 class="results"></h3>
+      <p class="result-show"></p>
+    </center>
+    <br />
+    <center>
+      <img
+        id="cup"
+        class="gif"
+        src="img\jurrasic-park-cup-of-water-3629715710.gif"
+        width="75%"
+      />
+    </center>
     <script src="script.js"></script>
   </body>
 </html>

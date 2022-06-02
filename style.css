@@ -4,5 +4,13 @@ body {
   font-family: sans-serif;
   color: #333;
   background: linear-gradient(to top left, #322c6e, #7dd56f);
-  height: 100vh;
+  height: 200vh;
+}
+
+.gif {
+  display: none;
+}
+
+.unhide {
+  display: block;
 }
