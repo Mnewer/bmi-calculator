@@ -4,41 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compitable" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI Calculator</title>
-    <script src="script.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <title>bmi HUB</title>
   </head>
-
   <body>
-    <center>
-      <div class="calculator-container">
-        <h1>BMI Calculator</h1>
-        <h3>May be slightly offensive</h3>
-        <p>Height in cm:</p>
-        <input class="height-input" type="text" />
-        <p>Weight in kg:</p>
-        <input class="weight-input" type="text" /><br />
-        <button
-          type="submit"
-          class="btn-calculate"
-          id="btn"
-          onclick="calcBMI()"
-        >
-          Calculate BMI
-        </button>
-      </div>
-      <h3 class="results"></h3>
-      <p class="result-show"></p>
-    </center>
-    <br />
-    <center>
-      <img
-        id="cup"
-        class="hide-glass"
-        src="img\jurrasic-park-cup-of-water-3629715710.gif"
-        width="75%"
-      />
-    </center>
-    <script src="script.js"></script>
+    <header class="text-center">
+      <img src="/img/logo.svg" alt="bmi hub logo" />
+    </header>
+
+    <div class="calculator text-center "><p class="pt-3">Height in cm:</p>
+      <input class="height-input" type="text"/>
+      <p class="pt-5">Weight in kg:</p>
+      <input class="mb-3 weight-input" type="text" /><br />
+      <button
+        type="submit"
+        class="btn btn-light btn-calculate"
+        id="btn"
+        onclick="calcBMI()"
+      >
+        Calculate BMI
+      </button>
+    </div>
+    <p class="text-center pt-5">BMI:</p></div>
+    <h3 class="result-show results text-center"></h3>
   </body>
 </html>

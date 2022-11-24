@@ -1,16 +1,15 @@
 body {
-  max-width: max-content;
-  margin: auto;
-  font-family: sans-serif;
-  color: #333;
-  background: linear-gradient(to top left, #322c6e, #7dd56f);
-  height: 200vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: #ff9900;
 }
 
-.hide-glass {
-  display: none;
+img {
+  width: 75vw;
+  border-radius: 25%;
 }
 
-.unhide-glass {
-  display: block;
+.btn {
+  background-color: #ff9900;
 }
